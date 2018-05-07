@@ -1,0 +1,299 @@
+/*
+
+MENU LATERAL
+
+*/
+body {
+	background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+	margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+	padding: 20px 0 2px 0;
+	background:;
+	max-width: 300px;
+
+}
+
+.profile-userpic img {
+	float: none;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	border-radius: 50% !important;
+}
+
+.profile-usertitle {
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+.profile-usertitle-name {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+
+.profile-userbuttons {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 6px 15px;
+	margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+	margin-right: 0px;
+}
+
+.profile-usermenu {
+	margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+	border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+	border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+	margin-right: 8px;
+	font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+	background-color: #9BADC1;
+	color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+	border-bottom: none;
+}
+/* Profile Content */
+.profile-content {
+	padding: 20px;
+	background: #fff;
+	min-height: 460px;
+}
+
+.glyphicon{
+	color: #fff;
+}
+
+
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+	height: auto;
+	line-height: 3em;
+	background-color:
+
+}
+
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+	height: 0;
+	overflow: hidden;
+	transition: height .25s;
+	background-color:;
+	color:;
+}
+
+
+.accordion-item-content ul{
+	list-style-type: none;
+}
+
+.accordion-item-content ul li a{
+	text-decoration: none;
+	color: ##122F4F;
+	border-left: 0px;
+
+}
+
+
+/*efeito OverFlow */
+@charset "UTF-8";
+/* =CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*, html, body {
+	margin:0;
+	padding:0;
+}
+... /* mais regras CSS reset */
+
+	/* regra para o box-sizing */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* regra para o clear float */
+.cf:before,
+.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+body {
+	margin-left:55px; /* espaço à esquerda para a barra vertical vísivel do menu */
+	font:  62.5%/1.2 Verdana, Helvetica, Arial, sans-serif;
+}
+
+#lateral {
+	padding:0 50px 0 0;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	font-size:1.2em;
+	background:rgb(44,62,80);
+	background-image: -moz-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+	background-image: -webkit-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+	background-image: -o-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79) );
+	background-image: -ms-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+	background-image: linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+	height:100%;
+	overflow:hidden;
+	width:370px;
+	position:fixed;
+	top:0;
+	left:-320px;
+	z-index: 100;
+}
+#lateral:before {
+	z-index:1000;
+	content: url(http://www.maujor.com/tutorial/menu-maujor/icone-menu.png);
+	font-size:4em;
+	color:white;
+	position:fixed;
+	left:4px;
+	top:45px;
+}
+#lateral:hover:before, #lateral:focus:before {
+	left:-100px
+}
+#lateral:hover, #lateral:focus,  #lateral:active  {
+	overflow-y:scroll;
+	-moz-transform: translate(320px, 0);
+	-webkit-transform: translate(320px, 0);
+	-o-transform: translate(320px, 0);
+	transform: translate(320px, 0);
+	padding-right:0;
+}
+#lateral .box {
+	list-style-type:none;
+	margin-bottom:1em;;
+	padding-bottom:1em;
+}
+#lateral h3 {
+	display:inline-block;
+	font-weight:bold;
+	font-size:1.6em;
+	font-style:normal;
+	padding-bottom:0.2em;
+	margin: 2em 0 2em 0.81em;
+	color:rgb(255,255,255);
+	border-bottom: 4px solid rgb(155,155,155);
+}
+#menu {
+	position:relative;
+	font-size:1.0em;
+	margin:1em 0 1em -1em;
+	padding:0;
+}
+#menu li {padding:0; margin:0;}
+#menu li a,  #menu li a:link {
+	font-size:2em;
+	color:rgb(255,255,255);
+	text-decoration: none;
+	padding: 0.8em 0 0.8em 1em;
+	display: block;
+	-moz-transition: all 1.2s ease;
+	-webkit-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+}
+#menu li a:hover {
+	color:rgb(255,255,255);
+	background-color:rgba(255,255,255,0.2);
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+@media (max-width:359px) {
+	body {margin-left:0;background-size:100% 28em!important;}
+	#lateral {
+		padding:0;
+		-moz-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		font-size:1.2em;
+		height:100%;
+		overflow:auto;
+		width:100% !important;
+		position:static;
+		top:0;
+		left:0;
+	}
+	#lateral:before {
+		z-index: 1000;
+		width:0;
+		text-align:center;
+		content: "http://icon-icons.com/icons2/906/PNG/512/square-menu_icon-icons.com_69888.png";
+		font-size:0;
+		color:white;
+		position:static;
+		top:0;
+		left:0;
+		display:inline-block;
+	}
+	#lateral:hover, #lateral:focus {
+		overflow:scroll;
+		-moz-transform: none;
+		-webkit-transform: none;
+		-o-transform:none;
+		transform:none;
+	}
+	#menu li a {border-bottom:1px solid #ccc;}
+	#menu li:first-child a {border-top:1px solid #ccc;}
+}
+
+/* FIM DO MENU LATERAL
+
+
+*/
