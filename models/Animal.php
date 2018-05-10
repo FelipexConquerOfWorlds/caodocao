@@ -16,16 +16,7 @@ class Animal
     private $cod_doacao;
     private $cod_usu;
 
-    /**
-     * Animal constructor.
-     * @param $nome
-     * @param $datanascimento
-     * @param $cod_animal
-     * @param $foto_perfil
-     * @param $cod_raca
-     * @param $cod_doacao
-     * @param $cod_usu
-     */
+
             public function __construct($nome, $datanascimento, $foto_perfil, $cod_raca, $cod_doacao, $cod_usu, $cod_animal)
             {
                 $this->nome = $nome;
