@@ -21,7 +21,7 @@ class CrudAnimal
 
     public function GetAnimais(){
 
-                $this->conexao = DBConnention::getConexao;
+                $this->conexao = DBConnection::getConexao;
 
                 $sql = "select * from animal";
 
@@ -54,6 +54,29 @@ class CrudAnimal
     }
 
     public function UpdateAnimal(Animal $animal){
-                $this->conexao = DBConnection::getConexao
+                $this->conexao = DBConnection::getConexao;
+
+                $sql = "update animal SET nome = '{$animal->getNome()}', datanascimento = '{$animal->getDatanascimento()}', foto_perfil ='{$animal->getFotoPerfil()}', cod_raca = '{$animal->getCodRaca()}',
+cod_doacao ='{$animal->getCodDoacao()}', cod_usu = '{$animal->getCodUsu()}', cod_animal = '{$animal->getCodAnimal()}'";
+
+                try{
+                    $this->conexao->exec($sql);
+
+                }catch (PDOException $e){
+                    return $e->getMessage();
+                }
+    }
+
+    public function DeleteAnimal(int $id){
+                $this->conexao = DBConnection::getConexao;
+
+                $sql = "delete from animal where id = '{$id}'";
+
+                try{
+                    $this->conexao->exec($sql);
+
+                }catch (PDOException $e){
+                    return $e->getMessage();
+                }
     }
 }
